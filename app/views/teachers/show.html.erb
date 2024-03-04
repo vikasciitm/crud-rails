@@ -1,0 +1,16 @@
+<div class="col-lg-12">
+	<div class="card m-5">
+		<div class="card-body">
+			<h1 class="text-center text-danger">View data.</h1>
+		</div>
+	</div>
+	<div class="card m-5 p-3 col-lg-6">
+		<h1>Name: <%= @teacher.name%></h1>
+		<h1>Email: <%= @teacher.email%></h1>
+		<h1>Subject: <%= @teacher.subject%></h1>
+	</div>
+	<div>
+		<%= link_to "Edit teacher",edit_teacher_path(@teacher.id),class: "btn btn-lg btn-primary m-3 rounded-0"%>
+		<%= link_to "Back to Teachers",teachers_path,class: "btn btn-lg btn-outline-primary m-3 rounded-0"%>
+	</div>
+</div>
